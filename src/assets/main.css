@@ -1,0 +1,62 @@
+@font-face {
+  font-family:youthtouch ;
+  src: url(./youthtouch.ttf);
+}
+:root {
+  --white: #FFFFFF;
+  --black: #000000;
+  --green: #61EDA2;
+
+/*background: var(--text-gradient);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;*/
+}
+html {
+  scroll-behavior: smooth;
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.text{
+  font-family: Work Sans;
+font-size: 22px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.h1{
+  font-family: Work Sans;
+font-size: 36px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+
+.h2{
+  font-family: Work Sans;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.h3{
+  font-family: Work Sans;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.gardient-text{
+  background: linear-gradient(227deg, #61EDA2 6.03%, #20BAEB 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+}
