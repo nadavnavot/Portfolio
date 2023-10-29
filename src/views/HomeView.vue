@@ -42,21 +42,21 @@ export default {
       <p class="subtitle grey">Some of the technologies I use to build my products</p>
       <div class="center_wrapper">
         <div class="row">
-          <img src="../assets/icons/html.png">
-          <img src="../assets/icons/css.png">
-          <img src="../assets/icons/js.png">
-          <img src="../assets/icons/vue.png">
-          <img src="../assets/icons/adobe.png">
-          <img src="../assets/icons/php.png">
-          <img src="../assets/icons/sql.png">
-          <img src="../assets/icons/api.png">
-          <img src="../assets/icons/postman.png">
-          <img src="../assets/icons/wordpress.png">
-          <img src="../assets/icons/github.png">
-          <img src="../assets/icons/git.png">
-          <img src="../assets/icons/mongo.png">
-          <img src="../assets/icons/figma.png">
-          <img src="../assets/icons/npm.png">
+          <img src="@/assets/icons/html.png">
+          <img src="@/assets/icons/css.png">
+          <img src="@/assets/icons/js.png">
+          <img src="@/assets/icons/vue.png">
+          <img src="@/assets/icons/adobe.png">
+          <img src="@/assets/icons/php.png">
+          <img src="@/assets/icons/sql.png">
+          <img src="@/assets/icons/api.png">
+          <img src="@/assets/icons/postman.png">
+          <img src="@/assets/icons/wordpress.png">
+          <img src="@/assets/icons/github.png">
+          <img src="@/assets/icons/git.png">
+          <img src="@/assets/icons/mongo.png">
+          <img src="@/assets/icons/figma.png">
+          <img src="@/assets/icons/npm.png">
         </div>
       </div>
     </section>

@@ -15,13 +15,13 @@
           <div class="rightSide">
             <h3 class="h3 gardient-text">Used Technologies</h3>
             <div class="icons-project">
-              <img src="../assets/icons/html.png">
-              <img src="../assets/icons/css.png">
-              <img src="../assets/icons/vue.png">
-              <img src="../assets/icons/api.png">
-              <img src="../assets/icons/mongo.png">
-              <img src="../assets/icons/postman.png">
-              <img src="../assets/icons/npm.png">
+              <img src="@/assets/icons/html.png">
+              <img src="@/assets/icons/css.png">
+              <img src="@/assets/icons/vue.png">
+              <img src="@/assets/icons/api.png">
+              <img src="@/assets/icons/mongo.png">
+              <img src="@/assets/icons/postman.png">
+              <img src="@/assets/icons/npm.png">
             </div>
           </div>
         </div>

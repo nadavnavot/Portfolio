@@ -35,10 +35,10 @@ export default {
                 <div class="rightSide">
                 <h3 class="h3 gardient-text">Used Technologies</h3>
             <div class="icons-project">
-                <img src="../assets/icons/php.png">
-                <img src="../assets/icons/css.png">
-                <img src="../assets/icons/sql.png">
-                <img src="../assets/icons/mysql.png">
+                <img src="@/assets/icons/php.png">
+                <img src="@/assets/icons/css.png">
+                <img src="@/assets/icons/sql.png">
+                <img src="@/assets/icons/mysql.png">
             </div>
         </div>
     </div> 
