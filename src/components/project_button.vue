@@ -36,6 +36,8 @@ margin-top: 20px;
     background-color: white;
     /* background: var(--gardient, linear-gradient(227deg, #61EDA2 6.03%, #20BAEB 100%)); */
     z-index: 1;
+    cursor: pointer;
+
 }
 .button_text p:hover {
   color: black; /* Ensure text color remains black on hover */

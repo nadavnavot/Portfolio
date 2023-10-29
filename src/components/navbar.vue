@@ -1,3 +1,4 @@
+
 <script>
 export default {
   name: 'navbar',
@@ -7,80 +8,58 @@ export default {
     };
   },
   methods: {
-    toggleMenu() {
-      this.isMobileMenuOpen = !this.isMobileMenuOpen;
+    mobile_menu() {
+      console.log('clicked');
     },
   },
 };
 </script>
 
+
 <template>
-    
-        <nav>
-            <span class="left_side">
-                <router-link to="/">
-                    <h3 class="name_title">Nadav Navot</h3>
-                    <p class="grey">Front End Developer</p>
-                </router-link>
-            </span>
-            <router-link to="/">
-                <p class="links">About</p>
-            </router-link>
-            <router-link to="/work">
-                <p class="links">Work</p>
-            </router-link>
-            <router-link class="links" to="/contact">
-                <div class="contact_container">
-                    <p class="contact">Contact</p>
-                </div>
-            </router-link>  </nav>
-
-          <!-- Mobile menu -->
-          <header class="header">
-  <input class="menu-btn" type="checkbox" id="menu-btn" />
-  <label class="menu-icon" for="menu-btn"><span class="navicon"></span>
-  <span class="navicon"></span></label>
-  <ul class="menu">
-    <li><a href="#work">Our Work</a></li>
-    <li><a href="#about">About</a></li>
-    <li><a href="#careers">Careers</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-    </header>
-
-</template>
+    <nav>
+      <span class="left_side">
+        <router-link to="/">
+          <h3 class="name_title">Nadav Navot</h3>
+          <p class="grey">Front End Developer</p>
+        </router-link>
+      </span>
+      <span class="mobile-menu">
+        <input class="menu-btn" type="checkbox" id="menu-btn" @click="mobile_menu()">
+        <label class="menu-icon" for="menu-btn">
+          <span class="navicon"></span>
+        </label>
+      </span>
+      <ul class="menu">
+        <li><router-link to="/about">About</router-link></li>
+        <li><router-link to="/work">Work</router-link></li>
+        <div class="contact_container">
+    <li class="contact"><router-link to="/contact">Contact</router-link></li>
+  </div>      </ul>
+    </nav>
+  </template>
+  
 
 <style scoped >
-
-
-
 nav {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 0px 10px;
-    border: 0px solid #000;
-    background: #FFF;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    font-family: Work Sans;
-    font-size: 22px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    padding: 0px 20px 0px 0px;
+  display: flex;
+  align-items: center;
+  padding: 0px 10px;
+  border: 0px solid #000;
+  background: #FFF;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  font-family: Work Sans;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: normal;
 }
 
-nav a {
-    text-decoration: none;
-    color: black;
-    transition: ease-in 0.3s ease 3s;
+
+li {
+    padding-right: 70px;
 }
 
-.links{
-    padding-left: 50px;
-}
-
-.name_title{
+.name_title {
     font-family: Work Sans;
     font-size: 22px;
     font-style: normal;
@@ -88,9 +67,11 @@ nav a {
     line-height: normal;
     margin-bottom: 5px;
 }
-nav p:hover {
+
+nav li:hover {
     text-decoration: underline;
-  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    transition: ease-in 0.3s ease 3s;
 
 }
 
@@ -105,210 +86,145 @@ nav p {
     margin-right: auto;
     margin-left: 25px;
 }
+ul.menu {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
 
+ul.menu li {
+  margin-right: 20px;
+}
+
+ul.menu li:last-child {
+  margin-right: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  transition: ease-in 0.3s ease;
+}
 .grey {
     color: #777676;
     display: block;
     padding: 0;
     margin-top: 0px;
 }
-.grey p a:hover{
+
+.grey p a:hover {
     text-decoration: none;
 }
+
 .contact_container {
     background-color: black;
     z-index: 1;
     border-radius: 7px;
+    margin-right: 20px;
+}
+.mobile-menu{
+    margin-right: -20px;
+}
+.contact {
+    text-align: center;
+    color: black;
+    background: var(--gardient, linear-gradient(227deg, #61EDA2 6.03%, #20BAEB 100%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 15px;
 }
 
-.contact{
-    text-align: center;
-    color: black; 
-    background: var(--gardient, linear-gradient(227deg, #61EDA2 6.03%, #20BAEB 100%));
-background-clip: text;
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-}
 .contact_container:hover {
     background-color: white;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
 }
-.contact:hover{
+
+.contact:hover {
     background: linear-gradient(227deg, #61EDA2 6.03%, #20BAEB 100%);
     -webkit-background-clip: text;
--webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
 }
 
-@media (min-width: 760px) {
-  .mobile-links{
-    display: none;
-}
-.header{
-  display: none;
-}
-}
-@media (max-width: 760px) {
-  .links {
-    display: none;
-  }.mobile-links{
-    display: none;
-}}
- /* hamburger-menu */
-
- .header ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  overflow: hidden;
-  background-color: #fff;
+@media (min-width: 768px) {
+    .mobile-menu {
+        display: none;
+    }
 }
 
-.header li a {
-  display: block;
-  padding: 20px 20px;
-  border-right: 1px solid #f4f4f4;
-  text-decoration: none;
+@media (max-width: 768px) {
+    li {
+        display: none;
+    }
+
 }
 
-.header li a:hover,
-.header .menu-btn:hover {
-  background-color: #f4f4f4;
+.menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
 }
 
-.header .lo {
-  display: block;
-  float: left;
-  font-size: 2em;
-  padding: 10px 20px;
-  text-decoration: none;
+.menu-icon .navicon {
+    background: #333;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background .2s ease-out;
+    width: 18px;
 }
 
-/* menu */
-
-.header .menu {
-  clear: both;
-  max-height: 0;
-  transition: max-height .2s ease-out;
+.menu-icon .navicon:before,
+.menu-icon .navicon:after {
+    background: #333;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
 }
 
-/* menu icon */
-
-.header .menu-icon {
-  cursor: pointer;
-  display: inline-block;
-  float: right;
-  padding: 28px 20px;
-  position: relative;
-  user-select: none;
+.menu-icon .navicon:before {
+    top: 5px;
 }
 
-.header .menu-icon .navicon {
-  background: #333;
-  display: block;
-  height: 1px;
-  position: relative;
-  transition: background .2s ease-out;
-  width: 20px;
-}
-
-.header .menu-icon .navicon:before,
-.header .menu-icon .navicon:after {
-  background: #333;
-  content: '';
-  display: block;
-  height: 100%;
-  position: absolute;
-  transition: all .2s ease-out;
-  width: 100%;
-}
-
-.header .menu-icon .navicon:before {
-  top: 5px;
-}
-
-.header .menu-icon .navicon:after {
-  top: -5px;
+.menu-icon .navicon:after {
+    top: -5px;
 }
 
 /* menu btn */
 
-.header .menu-btn {
+/* menu btn */
+
+ .menu-btn {
   display: none;
 }
 
-.header .menu-btn:checked ~ .menu {
+.menu-btn:checked ~ .menu {
   max-height: 240px;
 }
 
-.header .menu-btn:checked ~ .menu-icon .navicon {
+.menu-btn:checked ~ .menu-icon .navicon {
   background: transparent;
 }
 
-.header .menu-btn:checked ~ .menu-icon .navicon:before {
+.menu-btn:checked ~ .menu-icon .navicon:before {
   transform: rotate(-45deg);
 }
 
-.header .menu-btn:checked ~ .menu-icon .navicon:after {
+.menu-btn:checked ~ .menu-icon .navicon:after {
   transform: rotate(45deg);
 }
 
-.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
-.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
-  top: 0;
-}
-
-/* 48em = 768px */
-
-@media (min-width: 48em) {
-  .header li {
-    float: left;
-  }
-  .header li a {
-    padding: 20px 30px;
-  }
-  .header .menu {
-    clear: none;
-    float: right;
-    max-height: none;
-  }
-  .header .menu-icon {
-    display: none;
-  }
-
-
-}
-
-.header .menu-icon .navicon:before {
-  top: 5px;
-}
-
-.header .menu-icon .navicon:after {
-  top: -5px;
-}
-
-
-.header .menu-btn {
-  display: none;
-}
-
-.header .menu-btn:checked ~ .menu {
-  max-height: 240px;
-}
-
-.header .menu-btn:checked ~ .menu-icon .navicon {
-  background: transparent;
-}
-
-.header .menu-btn:checked ~ .menu-icon .navicon:before {
-  transform: rotate(-45deg);
-}
-
-.header .menu-btn:checked ~ .menu-icon .navicon:after {
-  transform: rotate(45deg);
-}
-
-.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
-.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+.menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
   top: 0;
 }
 
