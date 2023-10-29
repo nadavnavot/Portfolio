@@ -26,11 +26,11 @@ export default {
         <h3 class="card-subtitle" style="color: #53AAF0">An external service I developed for Ryanair that should benefit the
           company and its consumers as one.</h3>
         <div class="code-icons">
-          <img src="../assets/icons/vue.png" alt="">
-          <img src="../assets/icons/html.png" alt="">
-          <img src="../assets/icons/css.png" alt="">
+          <img src="@/assets/icons/vue.png" alt="">
+          <img src="@/assets/icons/html.png" alt="">
+          <img src="@/assets/icons/css.png" alt="">
         </div>
-        <img class="card-pic" src="../assets/pics/ride-fly.png" style="margin-bottom: 75px;">
+        <img class="card-pic" src="@/assets/pics/ride-fly.png" style="margin-bottom: 75px;">
         <div style="margin-top: -18px;" class="button-position">
           <a href="./ride-fly"><Project_button title="View Project" /></a>
         </div>
@@ -39,11 +39,11 @@ export default {
   <h1 class="card-title">Webshop</h1>
   <h3 class="card-subtitle">A webshop of refurbished smartphones.</h3>
   <div class="code-icons webshop-icons">
-    <img src="../assets/icons/php.png" alt="">
-    <img src="../assets/icons/sql.png" alt="">
-    <img src="../assets/icons/css.png" alt="">
+    <img src="@/assets/icons/php.png" alt="">
+    <img src="@/assets/icons/sql.png" alt="">
+    <img src="@/assets/icons/css.png" alt="">
   </div>
-  <img class="webshop-pic" src="../assets/pics/macbook.png" style="margin-top: -20px;">
+  <img class="webshop-pic" src="@/assets/pics/macbook.png" style="margin-top: -20px;">
   <div class="button-position">
     <a href="./Webshop"><Project_button title="View Project" /></a>
   </div>
@@ -56,11 +56,11 @@ export default {
         <h1 class="card-title">Cheers</h1>
         <h3 class="card-subtitle">The app every beer lover needs</h3>
         <div class="code-icons">
-          <img src="../assets/icons/JS.png">
-          <img src="../assets/icons/html.png">
-          <img src="../assets/icons/css.png">
+          <img src="@/assets/icons/JS.png">
+          <img src="@/assets/icons/html.png">
+          <img src="@/assets/icons/css.png">
         </div>
-        <img class="card-pic small-pic cheers-pic" src="../assets/pics/cheers.png" width="100%">
+        <img class="card-pic small-pic cheers-pic" src="@/assets/pics/cheers.png" width="100%">
         <div class="button-position">
 <h4 class="upload_title">Will be uploaded soon...</h4>   
      </div>
@@ -69,12 +69,12 @@ export default {
         <h1 class="card-title">Weather App</h1>
         <h3 class="card-subtitle">Weather information by location</h3>
         <div class="code-icons">
-          <img src="../assets/icons/api.png">
-          <img src="../assets/icons/js.png">
-          <img src="../assets/icons/html.png">
-          <img src="../assets/icons/css.png">
+          <img src="@/assets/icons/api.png">
+          <img src="@/assets/icons/js.png">
+          <img src="@/assets/icons/html.png">
+          <img src="@/assets/icons/css.png">
         </div>
-        <img class="card-pic small-pic" src="../assets/pics/weather.png">
+        <img class="card-pic small-pic" src="@/assets/pics/weather.png">
         <div class="button-position">
           <h4 class="upload_title">Will be uploaded soon...</h4>   
         </div>
