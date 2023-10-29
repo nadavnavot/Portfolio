@@ -42,13 +42,13 @@ export default {
       <p class="subtitle grey">Some of the technologies I use to build my products</p>
       <div class="center_wrapper">
         <div class="row">
-          <img src="../assets/icons/HTML.png" alt="">
-          <img src="../assets/icons/CSS.png" alt="">
-          <img src="../assets/icons//JS.png" alt="">
-          <img src="../assets/icons/Vue.png" alt="">
-          <img src="../assets/icons/Adobe_XD.png" alt="">
-          <img src="../assets/icons/PHP.png" alt="">
-          <img src="../assets/icons/SQL.png" alt="">
+          <img src="../assets/icons/html.png" alt="">
+          <img src="../assets/icons/css.png" alt="">
+          <img src="../assets/icons/js.png" alt="">
+          <img src="../assets/icons/vue.png" alt="">
+          <img src="../assets/icons/adobe.png" alt="">
+          <img src="../assets/icons/php.png" alt="">
+          <img src="../assets/icons/sql.png" alt="">
           <img src="../assets/icons/api.png" alt="">
           <img src="../assets/icons/postman.png" alt="">
           <img src="../assets/icons/wordpress.png" alt="">

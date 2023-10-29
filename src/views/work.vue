@@ -26,7 +26,7 @@ export default {
         <h3 class="card-subtitle" style="color: #53AAF0">An external service I developed for Ryanair that should benefit the
           company and its consumers as one.</h3>
         <div class="code-icons">
-          <img src="../assets/icons/vue.png" alt="">
+          <!-- <img src="../assets/icons/vue.png" alt=""> -->
           <img src="../assets/icons/html.png" alt="">
           <img src="../assets/icons/css.png" alt="">
         </div>
@@ -70,7 +70,7 @@ export default {
         <h3 class="card-subtitle">Weather information by location</h3>
         <div class="code-icons">
           <img src="../assets/icons/api.png">
-          <img src="../assets/icons/JS.png">
+          <img src="../assets/icons/js.png">
           <img src="../assets/icons/html.png">
           <img src="../assets/icons/css.png">
         </div>

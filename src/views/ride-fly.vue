@@ -17,7 +17,7 @@
             <div class="icons-project">
               <img src="../assets/icons/html.png">
               <img src="../assets/icons/css.png">
-              <img src="../assets/icons/Vue.png">
+              <img src="../assets/icons/vue.png">
               <img src="../assets/icons/api.png">
               <img src="../assets/icons/mongo.png">
               <img src="../assets/icons/postman.png">
