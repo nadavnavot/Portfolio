@@ -57,7 +57,7 @@ export default {
             <div class="slide-content">
               <h2 class="slide-title">Homepage</h2>
               <div class="responsive-container">
-                <img src="../assets/pics/homepage 2.png" alt="">
+                <img src="../assets/pics/homepage2.png" alt="">
               </div>
             </div>
           </swiper-slide>         
