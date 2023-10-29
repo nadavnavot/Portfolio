@@ -56,7 +56,7 @@ export default {
         <h1 class="card-title">Cheers</h1>
         <h3 class="card-subtitle">The app every beer lover needs</h3>
         <div class="code-icons">
-          <img src="@/assets/icons/JS.png">
+          <img src="@/assets/icons/js.png">
           <img src="@/assets/icons/html.png">
           <img src="@/assets/icons/css.png">
         </div>
