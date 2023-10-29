@@ -11,6 +11,9 @@ export default {
     mobile_menu() {
       console.log('clicked');
     },
+    isRouteActive(route) {
+      return this.$route.path === route;
+    }
   },
 };
 </script>
@@ -31,16 +34,21 @@ export default {
         </label>
       </span>
       <ul class="menu">
-        <li><router-link to="/about">About</router-link></li>
-        <li><router-link to="/work">Work</router-link></li>
+        <li><router-link to="/" active-class="active">About</router-link></li>
+        <li><router-link to="/work" active-class="active">Work</router-link></li>
         <div class="contact_container">
-    <li class="contact"><router-link to="/contact">Contact</router-link></li>
+    <li class="contact"><router-link to="/contact" active-class="active">Contact</router-link></li>
   </div>      </ul>
     </nav>
   </template>
   
 
 <style scoped >
+
+.active {
+  text-decoration: underline;
+}
+
 nav {
   display: flex;
   align-items: center;
