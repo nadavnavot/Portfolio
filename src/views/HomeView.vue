@@ -73,7 +73,7 @@ export default {
             <p class="project-text">Ride & Fly is a carpool app that should help Ryanair’s passengers to arrive safely and
               affordably to their
               early morning flights and to help Ryanair to make the plane more full.</p>
-            <a href="./ride-fly"><Project_button class="project_button" title="View Project" /></a>
+              <router-link to="/ride-fly" ><Project_button title="View Project" class="project_button" /></router-link>
           </div>
         </div>
         <div class="right-side">
@@ -93,7 +93,8 @@ export default {
             <p  class="project-text">A webshop of referbished smartphones.
            Find your next smartphone through our webshop.</p>
             <p class="project-text">Simply choose your next device and place an order!
-            </p> <a href="./webshop"><Project_button class="project_button" title="View Project" /></a>
+            </p> 
+            <router-link to="/webshop" ><Project_button class="project_button" title="View Project" /></router-link>
 
           </div>
         </div>

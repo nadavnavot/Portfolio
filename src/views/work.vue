@@ -29,7 +29,7 @@ export default {
         </div>
         <img class="card-pic" src="@/assets/pics/ride-fly.png" style="margin-bottom: 75px;">
         <div style="margin-top: -18px;" class="button-position">
-          <a href="./ride-fly"><Project_button title="View Project" /></a>
+          <router-link to="/ride-fly" ><Project_button title="View Project" /></router-link>
         </div>
       </div>
       <div class="card">
@@ -42,7 +42,7 @@ export default {
   </div>
   <img class="webshop-pic" src="@/assets/pics/macbook.png" style="margin-top: -20px;">
   <div class="button-position">
-    <a href="./Webshop"><Project_button title="View Project" /></a>
+    <router-link to="/webshop" ><Project_button title="View Project" /></router-link>
   </div>
 </div>
 
