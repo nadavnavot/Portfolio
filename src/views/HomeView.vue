@@ -61,8 +61,7 @@ export default {
       </div>
     </section>
     <section>
-      <h2 class="skills_title" style="  margin: 80px 50px;
-">Main projects</h2>
+      <h2 class="skills_title" style="margin: 50px 50px;">Main projects</h2>
 
       <div class="project_section ">
         <div class="left-side">
@@ -221,10 +220,9 @@ text-align: center;
 }
 
 .row img {
-  max-width: 100px;
+  max-width: 120px;
   max-height: 100px;
   object-fit: contain;
-  padding-left: 40px;
   margin-bottom: 50px;
   transition: transform .4s; 
 
@@ -270,12 +268,11 @@ justify-content: flex-start;
 }
 
 .project-image {
-  max-width: 80%;
-  max-height: 400px;
-  padding-top: 150px;
+  max-width: 90%;
+  max-height: 600px;
+  padding-top: 200px;
   padding-bottom: 150px;
-  margin: 0 auto; /* Center the image horizontally */
-
+  margin: 0 auto; 
 }
 
 .project_button {
@@ -301,7 +298,7 @@ justify-content: flex-start;
 .big-arrow {
   padding-left: 20px;
   transition: transform 0.3s ease;
-  width: 8%;
+  width: 11%;
 }
 .big_arrow_container{
   display: inline;
@@ -334,9 +331,10 @@ justify-content: center;  text-decoration: underline #20BAEB;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+  margin-top: 20px;
 }.contact-icons{
     margin-top: 40px;
-    width: 70px; height: 70px;
+    width: 110px; height: auto;
     padding-left: 20px;
     padding-right:20px;
     transition: transform .4s; 

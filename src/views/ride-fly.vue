@@ -2,10 +2,10 @@
     <div>
       <navbar />
       <div class="margins">
-        <h1 class="h1">Ride & Fly</h1>
+        <h1 class="h1" style="margin: 20px 0px 30px 0px;">Ride & Fly</h1>
         <div class="flexContainer">
           <div class="leftSide">
-            <h3 class="h3">Project Description:</h3>
+            <h3 style="margin: 20px 0px 10px 0px;" class="h3">Project Description:</h3>
             <p class="text">
               Ride & Fly is an external service I developed for Ryanair that should benefit the company and its consumers together.
               Ride & Fly is a carpool app that aims to help Ryanair’s passengers to arrive safely and affordably to their early morning flights and to help Ryanair have more passengers for these flights when the planes tend to be emptier than flights at other times of the day.

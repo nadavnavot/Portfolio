@@ -24,9 +24,12 @@ export default {
 </template>
 
 <style scoped>
+body{
+  overflow-y: hidden;
+}
 .contact-icons{
     margin-top: 40px;
-    width: 70px; height: 70px;
+    width: 110px; height: auto;
     padding-left: 20px;
     padding-right:20px;
     transition: transform .4s; 
@@ -48,6 +51,7 @@ font-size: 28px;
 font-style: normal;
 font-weight: 400;
 line-height: normal;
+margin-top: 20px;
 }
 
 .contact_subtitle{
@@ -59,8 +63,8 @@ line-height: normal;
 }
 
 .contact-background{
-    position: fixed;
-  top: 0;
+    position: absolute;
+    top: 20px;
   left: 0;
   width: 100%;
   height: 100%;
@@ -68,6 +72,10 @@ line-height: normal;
   background: var(--liner, linear-gradient(228deg, rgba(32, 191, 85, 0.37) 0%, #01BAEF 100%));
 }
 
-
+html,
+body {
+  
+  overflow-y: hidden;
+}
 
 </style>

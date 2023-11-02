@@ -1,55 +1,43 @@
-
-<script>
-export default {
-  name: 'navbar',
-  data() {
-    return {
-      isMobileMenuOpen: false,
-    };
-  },
-  methods: {
-    mobile_menu() {
-      console.log('clicked');
-    },
-    isRouteActive(route) {
-      return this.$route.path === route;
-    }
-  },
-};
-</script>
-
-
 <template>
-    <nav>
-      <span class="left_side">
-        <router-link to="/">
-          <h3 class="name_title">Nadav Navot</h3>
-          <p class="grey">Front End Developer</p>
-        </router-link>
-      </span>
-      <span class="mobile-menu">
-        <input class="menu-btn" type="checkbox" id="menu-btn" @click="mobile_menu()">
-        <label class="menu-icon" for="menu-btn">
-          <span class="navicon"></span>
-        </label>
-      </span>
-      <ul class="menu">
-        <li><router-link to="/" active-class="active">About</router-link></li>
-        <li><router-link to="/work" active-class="active">Work</router-link></li>
-        <div class="contact_container">
-    <li class="contact"><router-link to="/contact" active-class="active">Contact</router-link></li>
-  </div>      </ul>
-    </nav>
-  </template>
-  
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <router-link to="/" class="nav-link">
+        <h3 class="name_title">Nadav Navot</h3>
+        <p class="grey">Front End Developer</p>
+      </router-link>
+      <button class="navbar-toggler" style="margin-top: -20px;" type="button" @click="toggleNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" :class="{ show: isNavbarOpen }">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <router-link to="/" class="nav-link" :class="{ active: $route.path === '/' }">About</router-link>
+          </li>
+          <li class="nav-item">
+            <router-link to="/work#top" class="nav-link" :class="{ active: $route.path === '/work' }">Work</router-link>
+          </li>
+          <li class="nav-item contact_container">
+            <router-link to="/contact" class="nav-link contact" :class="{ active: $route.path === '/contact' }">Contact</router-link>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</template>
 
-<style scoped >
+
+
+
+<style scoped>
 
 .active {
   text-decoration: underline;
 }
-
+.navbar-nav.ml-auto {
+  margin-left: auto; 
+}
 nav {
+  margin-top: 20px;
   display: flex;
   align-items: center;
   padding: 0px 10px;
@@ -59,14 +47,13 @@ nav {
   font-family: Work Sans;
   font-size: 22px;
   font-weight: 400;
-  line-height: normal;
 }
-
-
-li {
-    padding-right: 70px;
+nav a{
+text-decoration: none;
 }
-
+.nav-item{
+  margin-left: 80px;
+}
 .name_title {
     font-family: Work Sans;
     font-size: 22px;
@@ -74,47 +61,8 @@ li {
     font-weight: 400;
     line-height: normal;
     margin-bottom: 5px;
-}
-
-nav li:hover {
-    text-decoration: underline;
-    transition: width 0.3s ease 0s, left 0.3s ease 0s;
-    transition: ease-in 0.3s ease 3s;
-
-}
-
-nav p {
-    list-style: none;
-    display: inline-block;
-    padding: 0 20px;
-    text-decoration: none;
-}
-
-.left_side {
-    margin-right: auto;
-    margin-left: 25px;
-}
-ul.menu {
-  list-style: none;
-  display: flex;
-  align-items: center;
-  margin: 0;
-  padding: 0;
-}
-
-ul.menu li {
-  margin-right: 20px;
-}
-
-ul.menu li:last-child {
-  margin-right: 0;
-}
-
-nav a {
-  text-decoration: none;
-  color: black;
-  transition: ease-in 0.3s ease;
-}
+    color: #000;
+  }
 .grey {
     color: #777676;
     display: block;
@@ -126,115 +74,94 @@ nav a {
     text-decoration: none;
 }
 
-.contact_container {
-    background-color: black;
-    z-index: 1;
-    border-radius: 7px;
-    margin-right: 20px;
-}
-.mobile-menu{
-    margin-right: -20px;
-}
 .contact {
-    text-align: center;
+    text-align: left;
     color: black;
     background: var(--gardient, linear-gradient(227deg, #61EDA2 6.03%, #20BAEB 100%));
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    padding: 15px;
 }
-
+.contact:hover {
+    background: linear-gradient(227deg, #61EDA2 6.03%, #20BAEB 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.contact_container {
+  background-color: black;
+  z-index: 1;
+  border-radius: 7px;
+  padding: 10px; 
+}
 .contact_container:hover {
     background-color: white;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     cursor: pointer;
 }
 
-.contact:hover {
-    background: linear-gradient(227deg, #61EDA2 6.03%, #20BAEB 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+.navbar-nav{
+  display: flex; 
+  align-items: center;
+  padding-bottom: 20px;
 }
 
-@media (min-width: 768px) {
-    .mobile-menu {
-        display: none;
-    }
+@media (max-width:784px){
+  .nav-item{
+  margin-left: 10px;
 }
-
-@media (max-width: 768px) {
-    li {
-        display: none;
-    }
-
+.navbar-nav{
+align-items: initial;
+display: block;
 }
-
-.menu-icon {
-    cursor: pointer;
-    display: inline-block;
-    float: right;
-    padding: 28px 20px;
-    position: relative;
-    user-select: none;
+.contact_container{
+width: 110px;
+margin-top: 20px;
 }
-
-.menu-icon .navicon {
-    background: #333;
-    display: block;
-    height: 2px;
-    position: relative;
-    transition: background .2s ease-out;
-    width: 18px;
+.nav-item{
+  margin-bottom: 15px;
 }
-
-.menu-icon .navicon:before,
-.menu-icon .navicon:after {
-    background: #333;
-    content: '';
-    display: block;
-    height: 100%;
-    position: absolute;
-    transition: all .2s ease-out;
-    width: 100%;
 }
-
-.menu-icon .navicon:before {
-    top: 5px;
-}
-
-.menu-icon .navicon:after {
-    top: -5px;
-}
-
-/* menu btn */
-
-/* menu btn */
-
- .menu-btn {
-  display: none;
-}
-
-.menu-btn:checked ~ .menu {
-  max-height: 240px;
-}
-
-.menu-btn:checked ~ .menu-icon .navicon {
-  background: transparent;
-}
-
-.menu-btn:checked ~ .menu-icon .navicon:before {
-  transform: rotate(-45deg);
-}
-
-.menu-btn:checked ~ .menu-icon .navicon:after {
-  transform: rotate(45deg);
-}
-
-.menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
-.menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
-  top: 0;
-}
-
-
 </style>
+
+
+<script>
+import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap/dist/js/bootstrap.bundle';
+import 'bootstrap/dist/js/bootstrap.js';   
+
+import {
+  MDBNavbar,
+  MDBNavbarToggler,
+  MDBNavbarBrand,
+  MDBNavbarNav,
+  MDBNavbarItem,
+  MDBCollapse,
+} from 'mdb-vue-ui-kit';
+import { ref } from 'vue';
+
+export default {
+  name: 'navbar',
+  components: {
+    MDBNavbar,
+    MDBNavbarToggler,
+    MDBNavbarBrand,
+    MDBNavbarNav,
+    MDBNavbarItem,
+    MDBCollapse,
+  },
+  data() {
+    return {
+      isNavbarOpen: false,
+    };
+  },
+  methods: {
+    toggleNavbar() {
+      this.isNavbarOpen = !this.isNavbarOpen;
+    },
+  },
+  setup() {
+    const collapse2 = ref(false);
+    return { collapse2 };
+  },
+};
+</script>

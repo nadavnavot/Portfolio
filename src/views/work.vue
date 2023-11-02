@@ -15,9 +15,6 @@ export default {
 <template>
   <div>
     <navbar />
-    <router-view v-if="$route.path === '/work'" />
-    <confetti v-if="$route.path === '/work'" />
-
     <h2 class="major-title projects-title">Major Projects</h2>
     <div class="card-container">
       <div class="card" style="  
@@ -195,21 +192,19 @@ h2:after {
   margin-right: 50px;
   margin-left: 50px;
   box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.13);
-  text-align: left; /* Add text alignment */
+  text-align: left; 
 }
 
 .card-pic {
   display: block;
   margin: 0 auto;
-  width: 150px; /* Adjust the width as needed */
-  height: auto; /* Maintain aspect ratio */
+  width: 150px; 
+  height: auto; 
 }
 
 .card-pic.small-pic {
-  margin-top: 80px; /* Modify the margin as needed */
+  margin-top: 80px; 
 }
-
-/* Adjust the margins to your preference for proper alignment. */
 
 .cheers-pic{
   width: 165px;

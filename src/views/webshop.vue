@@ -26,10 +26,10 @@ export default {
     <div>
         <navbar />
         <div class="margins">
-            <h1 class="h1">Webshop</h1>
+          <h1 class="h1" style="margin: 20px 0px 30px 0px;">Webshop</h1>
             <div class="flexContainer"> 
                 <div class="leftSide">
-                <h3 class="h3">Project Description:</h3>
+                  <h3 style="margin: 20px 0px 10px 0px;" class="h3">Project Description:</h3>
                 <p class="text">
                     A webshop of refurbished smartphones where the User can add items to the cart and check out. <br><br>After the user's order, the database updates the order's information, including the client details and the purchased products. </p></div>
                 <div class="rightSide">

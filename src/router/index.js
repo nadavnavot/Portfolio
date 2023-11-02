@@ -3,28 +3,21 @@ import HomeView from '../views/HomeView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
+  mode: 'hash',
+
   routes: [
     {
       path: '/',
       name: 'home',
       component: HomeView
     },
-  //   {
-  //   path: '/about',
-  //   name: 'about',
-  //   component: about
 
-  // },
   {
     path: '/work',
     name: 'work',
     component: () => import('../views/work.vue'),
   },
-  // {
-  // path: '/workpage',
-  // name: 'workpage',
-  // component: () => import('../views/workpage.vue'),
-  // },
+
   {
     path: '/ride-fly',
     name: 'ride-fly',

@@ -40,6 +40,6 @@ margin-top: 20px;
 
 }
 .button_text p:hover {
-  color: black; /* Ensure text color remains black on hover */
+  color: black; 
 }
 </style>

@@ -1,6 +1,5 @@
 <template>
   <div>
-    <!-- Your confetti effect code here -->
   </div>
 </template>
 
@@ -23,10 +22,9 @@ export default {
 
     onMounted(() => {
       const handleScroll = () => {
-        const triggerPoint = 3200; // Adjust this value based on where you want the trigger point to be
+        const triggerPoint = 3300; 
         if (window.scrollY >= triggerPoint) {
           fireConfetti();
-          // Remove the scroll event listener after firing the confetti
           window.removeEventListener('scroll', handleScroll);
         }
       };
