@@ -17,8 +17,7 @@ export default {
     <navbar />
     <h2 class="major-title projects-title">Major Projects</h2>
     <div class="card-container">
-      <div class="card" style="  
-">
+      <div class="card">
         <h1 class="card-title">Ride & Fly</h1>
         <h3 class="card-subtitle" style="color: #53AAF0">An external service I developed for Ryanair that should benefit the
           company and its consumers as one.</h3>

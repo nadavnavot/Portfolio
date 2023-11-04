@@ -104,13 +104,12 @@ export default {
     </section>
     <section>
       <div class="black-projects">
-        <a href="./work" class="projects-links">
+        <router-link to="/work" class="projects-links" >
           <h1 class="more_projects">Check out more of my projects</h1>
           <div class="big_arrow_container">
           <img src="../assets/pics/big-arrow.png" class="big-arrow">
         </div>
-        
-        </a>
+      </router-link>
       </div>
     </section>
     <section>
