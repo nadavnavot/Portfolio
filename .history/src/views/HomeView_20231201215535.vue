@@ -248,9 +248,9 @@ justify-content: flex-start;
   padding: 30px 0px 190px 20px;
 }
 
-@media (max-width: 600px) {
+@media (min-width: 600px) {
   .blue {
-    padding: 30px 0px 850px 20px;
+    padding: 30px 0px 800px 20px;
   }
 }
 .green {

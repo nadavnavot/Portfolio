@@ -245,14 +245,9 @@ justify-content: flex-start;
   height: 670px;
   color: white;
   position: relative;
-  padding: 30px 0px 190px 20px;
+  padding: 30px 0px 130px 20px;
 }
 
-@media (max-width: 600px) {
-  .blue {
-    padding: 30px 0px 850px 20px;
-  }
-}
 .green {
   background: linear-gradient(180deg, rgba(32, 191, 85, 0.37) 0%, #01BAEF 87.97%);
 }

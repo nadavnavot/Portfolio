@@ -250,7 +250,7 @@ justify-content: flex-start;
 
 @media (max-width: 600px) {
   .blue {
-    padding: 30px 0px 850px 20px;
+    padding: 30px 0px 800px 20px;
   }
 }
 .green {
